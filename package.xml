@@ -30,6 +30,15 @@
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
+   <dir name="doc">
+    <dir name="Horde">
+     <dir name="Kolab">
+      <dir name="Resource">
+       <file name="TODO.rst" role="doc" />
+      </dir> <!-- /doc/Horde/Kolab/Resource -->
+     </dir> <!-- /doc/Horde/Kolab -->
+    </dir> <!-- /doc/Horde -->
+   </dir> <!-- /doc -->
    <dir name="lib">
     <dir name="Horde">
      <dir name="Kolab">
@@ -320,7 +329,6 @@
     </dir> <!-- /test/Horde -->
    </dir> <!-- /test -->
    <file name="LICENSE" role="doc" />
-   <file name="TODO" role="php" />
   </dir> <!-- / -->
  </contents>
  <dependencies>
@@ -383,6 +391,7 @@
  </dependencies>
  <phprelease>
   <filelist>
+   <install as="TODO.rst" name="doc/Horde/Kolab/Resource/TODO.rst" />
    <install as="Horde/Kolab/Resource.php" name="lib/Horde/Kolab/Resource.php" />
    <install as="Horde/Kolab/Resource/Epoch.php" name="lib/Horde/Kolab/Resource/Epoch.php" />
    <install as="Horde/Kolab/Resource/Exception.php" name="lib/Horde/Kolab/Resource/Exception.php" />
@@ -481,8 +490,7 @@
    <install as="Horde/Kolab/Resource/fixtures/recur_invitation.eml" name="test/Horde/Kolab/Resource/fixtures/recur_invitation.eml" />
    <install as="Horde/Kolab/Resource/phpunit.xml" name="test/Horde/Kolab/Resource/phpunit.xml" />
    <install as="Horde/Kolab/Resource/TestCase.php" name="test/Horde/Kolab/Resource/TestCase.php" />
-   <install as="" name="TODO" />
-  </filelist>
+   </filelist>
  </phprelease>
  <changelog>
   <release>

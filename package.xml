@@ -10,7 +10,7 @@
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2017-10-17</date>
+ <date>2017-10-20</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0</api>
@@ -322,7 +322,6 @@
         <file name="recur_invitation.eml" role="test" />
        </dir> <!-- /test/Horde/Kolab/Resource/fixtures -->
        <file name="Autoload.php" role="test" />
-       <file name="phpunit.xml" role="test" />
        <file name="TestCase.php" role="test" />
       </dir> <!-- /test/Horde/Kolab/Resource -->
      </dir> <!-- /test/Horde/Kolab -->
@@ -488,9 +487,8 @@
    <install as="locale/zh_TW/LC_MESSAGES/Horde_Kolab_Resource.po" name="locale/zh_TW/LC_MESSAGES/Horde_Kolab_Resource.po" />
    <install as="Horde/Kolab/Resource/Autoload.php" name="test/Horde/Kolab/Resource/Autoload.php" />
    <install as="Horde/Kolab/Resource/fixtures/recur_invitation.eml" name="test/Horde/Kolab/Resource/fixtures/recur_invitation.eml" />
-   <install as="Horde/Kolab/Resource/phpunit.xml" name="test/Horde/Kolab/Resource/phpunit.xml" />
    <install as="Horde/Kolab/Resource/TestCase.php" name="test/Horde/Kolab/Resource/TestCase.php" />
-   </filelist>
+  </filelist>
  </phprelease>
  <changelog>
   <release>
@@ -502,7 +500,7 @@
     <release>beta</release>
     <api>beta</api>
    </stability>
-   <date>2017-10-17</date>
+   <date>2017-10-20</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * [jan] Mark PHP 7 as supported.

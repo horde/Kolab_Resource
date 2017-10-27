@@ -1,5 +1,5 @@
 {
-    "name": "horde/horde-kolab-resource",
+    "name": "horde/kolab-resource",
     "description": "Resource management for the Kolab server",
     "type": "library",
     "homepage": "https://pear.horde.org",

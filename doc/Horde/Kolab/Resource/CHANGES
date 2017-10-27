@@ -1,0 +1,10 @@
+----------------
+v1.0.0alpha1-git
+----------------
+
+[jan] Mark PHP 7 as supported.
+[jan] Fix issues with certain locales like Turkish.
+[jan] Update Basque translation (Ibon Igartua <ibon.igartua@ehu.es>).
+First alpha release for Horde 4.
+[jan] Update Latvian translation.
+[gwr] Extracted package from Kolab_Filter.

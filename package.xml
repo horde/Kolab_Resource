@@ -2,7 +2,7 @@
 <package packagerversion="1.9.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>Horde_Kolab_Resource</name>
  <channel>pear.horde.org</channel>
- <summary>Resource management for the Kolab server</summary>
+ <summary>Kolab resource management library</summary>
  <description>This package allows booking of Kolab server resources.</description>
  <lead>
   <name>Gunnar Wrobel</name>
@@ -10,7 +10,7 @@
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2017-10-30</date>
+ <date>2017-11-14</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0</api>
@@ -504,7 +504,7 @@
     <release>beta</release>
     <api>beta</api>
    </stability>
-   <date>2017-10-30</date>
+   <date>2017-11-14</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
 * [jan] Mark PHP 7 as supported.

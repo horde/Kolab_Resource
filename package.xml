@@ -323,7 +323,6 @@
         <file name="recur_invitation.eml" role="test" />
        </dir> <!-- /test/Horde/Kolab/Resource/fixtures -->
        <file name="Autoload.php" role="test" />
-       <file name="phpunit.xml" role="test" />
        <file name="TestCase.php" role="test" />
       </dir> <!-- /test/Horde/Kolab/Resource -->
      </dir> <!-- /test/Horde/Kolab -->
@@ -488,7 +487,6 @@
    <install as="locale/zh_TW/LC_MESSAGES/Horde_Kolab_Resource.mo" name="locale/zh_TW/LC_MESSAGES/Horde_Kolab_Resource.mo" />
    <install as="locale/zh_TW/LC_MESSAGES/Horde_Kolab_Resource.po" name="locale/zh_TW/LC_MESSAGES/Horde_Kolab_Resource.po" />
    <install as="Horde/Kolab/Resource/Autoload.php" name="test/Horde/Kolab/Resource/Autoload.php" />
-   <install as="Horde/Kolab/Resource/phpunit.xml" name="test/Horde/Kolab/Resource/phpunit.xml" />
    <install as="Horde/Kolab/Resource/TestCase.php" name="test/Horde/Kolab/Resource/TestCase.php" />
    <install as="Horde/Kolab/Resource/fixtures/recur_invitation.eml" name="test/Horde/Kolab/Resource/fixtures/recur_invitation.eml" />
    <install as="TODO" name="TODO" />

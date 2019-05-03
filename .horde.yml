@@ -2,7 +2,7 @@
 id: Kolab_Resource
 name: Kolab_Resource
 full: Kolab resource management library
-description: This package allows booking of Kolab server resources.
+description: A library to allow booking of Kolab server resources.
 list: dev
 type: library
 authors:

@@ -12,7 +12,7 @@
  </lead>
  <date>2021-07-04</date>
  <version>
-  <release>1.0.0alpha1</release>
+  <release>1.0.0alpha2</release>
   <api>1.0.0</api>
  </version>
  <stability>
@@ -21,13 +21,7 @@
  </stability>
  <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
  <notes>
-* [rla] Package for H6 / composer installer.
-* [jan] Mark PHP 7 as supported.
-* [jan] Fix issues with certain locales like Turkish.
-* [jan] Update Basque translation (Ibon Igartua &lt;ibon.igartua@ehu.es&gt;).
-* First alpha release for Horde 4.
-* [jan] Update Latvian translation.
-* [gwr] Extracted package from Kolab_Filter.
+* 
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -448,13 +442,14 @@
   </filelist>
  </phprelease>
  <changelog>
+ 
   <release>
    <version>
     <release>1.0.0alpha1</release>
     <api>1.0.0</api>
    </version>
    <stability>
-    <release>beta</release>
+    <release>alpha</release>
     <api>beta</api>
    </stability>
    <date>2021-07-04</date>
@@ -467,6 +462,21 @@
 * First alpha release for Horde 4.
 * [jan] Update Latvian translation.
 * [gwr] Extracted package from Kolab_Filter.
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.0.0alpha2</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2021-07-04</date>
+   <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
+   <notes>
+* 
    </notes>
   </release>
  </changelog>

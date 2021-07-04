@@ -3,14 +3,14 @@
  <name>Horde_Kolab_Resource</name>
  <channel>pear.horde.org</channel>
  <summary>Kolab resource management library</summary>
- <description>This package allows booking of Kolab server resources.</description>
+ <description>A library to allow booking of Kolab server resources.</description>
  <lead>
   <name>Gunnar Wrobel</name>
   <user>wrobel</user>
   <email>p@rdus.de</email>
   <active>yes</active>
  </lead>
- <date>2017-11-11</date>
+ <date>2021-07-04</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0</api>
@@ -21,6 +21,7 @@
  </stability>
  <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
  <notes>
+* [rla] Package for H6 / composer installer.
 * [jan] Mark PHP 7 as supported.
 * [jan] Fix issues with certain locales like Turkish.
 * [jan] Update Basque translation (Ibon Igartua &lt;ibon.igartua@ehu.es&gt;).
@@ -334,59 +335,13 @@
  <dependencies>
   <required>
    <php>
-    <min>5.3.0</min>
+    <min>7.0.0</min>
     <max>8.0.0alpha1</max>
     <exclude>8.0.0alpha1</exclude>
    </php>
    <pearinstaller>
     <min>1.7.0</min>
    </pearinstaller>
-   <package>
-    <name>HTTP_Request</name>
-    <channel>pear.php.net</channel>
-   </package>
-   <package>
-    <name>Horde_Icalendar</name>
-    <channel>pear.horde.org</channel>
-    <min>2.0.0</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
-   </package>
-   <package>
-    <name>Horde_Mime</name>
-    <channel>pear.horde.org</channel>
-    <min>2.0.0</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
-   </package>
-   <package>
-    <name>Horde_Kolab_Server</name>
-    <channel>pear.horde.org</channel>
-    <min>2.0.0</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
-   </package>
-   <package>
-    <name>Horde_Kolab_Storage</name>
-    <channel>pear.horde.org</channel>
-    <min>2.0.0</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
-   </package>
-   <package>
-    <name>Horde_Translation</name>
-    <channel>pear.horde.org</channel>
-    <min>2.2.0</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
-   </package>
-   <package>
-    <name>Horde_Util</name>
-    <channel>pear.horde.org</channel>
-    <min>2.0.0</min>
-    <max>3.0.0alpha1</max>
-    <exclude>3.0.0alpha1</exclude>
-   </package>
   </required>
  </dependencies>
  <phprelease>
@@ -502,9 +457,10 @@
     <release>beta</release>
     <api>beta</api>
    </stability>
-   <date>2017-11-11</date>
+   <date>2021-07-04</date>
    <license uri="http://www.horde.org/licenses/lgpl21">LGPL-2.1</license>
    <notes>
+* [rla] Package for H6 / composer installer.
 * [jan] Mark PHP 7 as supported.
 * [jan] Fix issues with certain locales like Turkish.
 * [jan] Update Basque translation (Ibon Igartua &lt;ibon.igartua@ehu.es&gt;).

@@ -2,13 +2,14 @@
 1.0.0alpha1:
   api: 1.0.0
   state:
-    release: beta
+    release: alpha
     api: beta
-  date: 2017-10-20
+  date: 2021-07-04
   license:
     identifier: LGPL-2.1
     uri: http://www.horde.org/licenses/lgpl21
   notes: |
+    [rla] Package for H6 / composer installer.
     [jan] Mark PHP 7 as supported.
     [jan] Fix issues with certain locales like Turkish.
     [jan] Update Basque translation (Ibon Igartua <ibon.igartua@ehu.es>).

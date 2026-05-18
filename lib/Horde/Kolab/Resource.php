@@ -406,12 +406,12 @@ class Kolab_Resource
                     }
 
                     foreach ($events as $dtstart => $dtend) {
-                        Horde::log(sprintf('Requested event from %s to %s', strftime('%a, %d %b %Y %H:%M:%S %z', $dtstart), strftime('%a, %d %b %Y %H:%M:%S %z', $dtend)), 'DEBUG');
+                        Horde::log(sprintf('Requested event from %s to %s', date('D, d M Y H:i:s O', $dtstart), date('D, d M Y H:i:s O', $dtend)), 'DEBUG');
                         foreach ($busyperiods as $busyfrom => $busyto) {
                             if (empty($busyfrom) && empty($busyto)) {
                                 continue;
                             }
-                            Horde::log(sprintf('Busy period from %s to %s', strftime('%a, %d %b %Y %H:%M:%S %z', $busyfrom), strftime('%a, %d %b %Y %H:%M:%S %z', $busyto)), 'DEBUG');
+                            Horde::log(sprintf('Busy period from %s to %s', date('D, d M Y H:i:s O', $busyfrom), date('D, d M Y H:i:s O', $busyto)), 'DEBUG');
                             if ((isset($extraparams[$busyfrom]['X-UID'])
                                  && in_array(base64_decode($extraparams[$busyfrom]['X-UID']), $ignore))
                                 || (isset($extraparams[$busyfrom]['X-SID'])
@@ -685,7 +685,7 @@ class Kolab_Resource
                     $etemp = new Horde_Kolab_Resource_Epoch($temp);
                     // substract a day (86400 seconds) using epochs to take number of days per month into account
                     $epoch= $etemp->getEpoch() - 86400;
-                    $date = gmstrftime('%Y-%m-%d', $epoch);
+                    $date = gmdate('Y-m-d', $epoch);
                 } else {
                     $date= sprintf('%04d-%02d-%02d', $temp['year'], $temp['month'], $temp['mday']);
                 }
@@ -697,7 +697,7 @@ class Kolab_Resource
                 $date = sprintf('%04d-%02d-%02d', $temp['year'], $temp['month'], $temp['mday']) . 'T' . $time;
             }
         }  else {
-            $date = gmstrftime('%Y-%m-%dT%H:%M:%SZ', $ical_date);
+            $date = gmdate('Y-m-d\TH:i:s\Z', $ical_date);
         }
         Horde::log(sprintf('To <%s>', $date), 'DEBUG');
         return $date;

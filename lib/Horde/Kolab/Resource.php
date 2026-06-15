@@ -191,15 +191,17 @@ class Kolab_Resource
         }
         @session_start();
 
-        $secret = $GLOBALS['injector']->getInstance('Horde_Secret');
-
-        $_SESSION['__auth'] = array(
-            'authenticated' => true,
-            'userId' => $calendar_user,
-            'timestamp' => time(),
-            'credentials' => $secret->write($secret->getKey(),
-                                            serialize(array('password' => $conf['kolab']['filter']['calendar_pass']))),
-            'remote_addr' => isset($_SERVER['REMOTE_ADDR']) ? $_SERVER['REMOTE_ADDR'] : null,
+        // Persist the authenticated calendar user via the canonical
+        // Registry::setAuth path. Pre-fix this method wrote
+        // \$_SESSION['__auth'] directly with the Horde 4 slot layout
+        // (authenticated, userId, timestamp, credentials, remote_addr),
+        // which the modern Horde_Session shim no longer reads (auth
+        // slots live under auth/userId, auth/timestamp, auth_app/*,
+        // etc.). setAuth writes the modern slots correctly and routes
+        // credentials through AuthCredentialStore.
+        $GLOBALS['registry']->setAuth(
+            $calendar_user,
+            array('password' => $conf['kolab']['filter']['calendar_pass'])
         );
 
         /* Kolab IMAP handling */

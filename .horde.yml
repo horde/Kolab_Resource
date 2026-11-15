@@ -6,17 +6,16 @@ description: A library to allow booking of Kolab server resources.
 list: dev
 type: library
 authors:
-  -
-    name: Gunnar Wrobel
+  - name: Gunnar Wrobel
     user: wrobel
     email: p@rdus.de
     active: true
     role: lead
 version:
-  release: 1.0.0alpha2
+  release: 1.1.0-alpha
   api: 1.0.0
 state:
-  release: beta
+  release: alpha
   api: beta
 license:
   identifier: LGPL-2.1-only
@@ -32,3 +31,4 @@ dependencies:
       horde/kolab_storage: ^3
       horde/translation: ^3
       horde/util: ^3
+vendor: horde
